@@ -1,0 +1,21 @@
+body {background-color:black;}
+
+#box {
+	width: 150px;
+	height: 150px;
+	animation: boxblowup 5s alternate;
+	animation-iteration-count: infinite;
+}
+@keyframes boxblowup {
+	0% {background-color: pink;}
+	50% {
+		background-color: magenta;
+		
+		transform: translate(350px,700px) rotate3d(1,2,3,645deg)
+		scale3d(5,2,4);
+		
+		}
+		100%{
+		background-color: blue;
+		border-radius:50%;
+		}
